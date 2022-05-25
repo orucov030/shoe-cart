@@ -1,0 +1,138 @@
+ @import url('https://fonts.googleapis.com/css2?family=Poppins:ital@0;1&display=swap'); */
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    min-height: 100vh;
+    min-width: 100vw;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+.main{
+    position: absolute;
+    background: white;
+    min-height: 20vh;
+    min-width: 20vh;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border: 1px solid black;
+    border-radius: 20px;
+}
+
+.shoeimage{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.shoeimage img{
+    object-fit: cover;
+    object-position: center;
+    height: 300px;
+    transition: 0.5s ease;
+    cursor: pointer;
+    width: 500px;
+    margin-top: 80px;
+    margin-left: 40px;
+}
+
+img:hover{
+    transform: rotate(5deg);
+}
+
+.colors{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    min-height: 30vh;
+}
+
+.colors div{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    margin-bottom: 50px;
+    cursor: pointer;
+    --border: 2px solid black;
+}
+
+.colors::after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 40%;
+    transform: translate(-50%, -50%);
+    height: 305px;
+    width: 5px;
+    border-right: 1px solid rgba(0,0,0, 0.2);
+
+}
+
+.size{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    min-width: 50vh;
+    min-height: 20vh;
+    right: 0%;
+    text-align: center;
+}
+
+.prices{
+    padding: 0.5rem 2.2rem;
+    width: 50vh;
+    text-align: right;
+}
+
+.old{
+    text-decoration: line-through;
+}
+
+.number{
+    display: grid;
+    grid-template-columns: repeat(3, 80px);
+    row-gap: 10px;
+    justify-content: space-evenly;
+    margin-left: 30px;
+    padding: 20px;
+}
+
+.size h2{
+    letter-spacing: 5px;
+    font-size: 2rem;
+    margin-left: 30px;
+    margin-bottom: 60px;
+}
+
+.number div{
+    padding: 0.5rem 1rem;
+    border: 1px solid black;
+    cursor: pointer;
+    font-weight: bolder;
+}
+
+.submit{
+    margin: 5% 20%;
+    display: flex;
+    justify-content: center;
+    width: 250px;
+    font-size: 1rem;
+    padding: 1rem 0.5rem;
+    letter-spacing: 5px;
+    border: 1px solid black;
+    cursor: pointer;
+    background-color: blue;
+    color: white;
+    transition: 0.5s ease;
+}
+
